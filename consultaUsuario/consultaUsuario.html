@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Consulta de Usuários</title>
+    <link rel="stylesheet" href="/consultaUsuario/consultaUsuario.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <span>Consulta de usuários</span>
+        <input
+          type="search"
+          id="search"
+          placeholder="Buscar"
+          onclick="executar()"
+          list="pesquisa"
+        />
+        <datalist id="pesquisa">
+          <option value="Francisco Mello"></option>
+          <option value="Inativo"></option>
+          <option value="34 anos"></option>
+          <option value="Isabel Mendes"></option>
+          <option value="29 anos"></option>
+        </datalist>
+        <a href="#"
+          ><button class="acao" onclick="openModal()" id="inserir">
+            Inserir Novo
+          </button></a
+        >
+      </div>
+      <div class="divTable">
+        <table>
+          <thead>
+            <tr>
+              <th>Nome</th>
+              <th>Login</th>
+              <th>CPF</th>
+              <th>Nascimento</th>
+              <th>Nome da mãe</th>
+              <th>Status</th>
+              <th>Inclusão</th>
+              <th>Alteração</th>
+              <th>Idade</th>
+              <th class="acao">Alterar</th>
+              <th class="acao">Excluir</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="modal-container">
+      <div class="modal">
+        <form action="">
+          <label for="nome">Nome</label>
+          <input id="nome" type="text" />
+          <label for="login">Login</label>
+          <input id="login" type="text" />
+          <label for="cpf">CPF</label>
+          <input id="cpf" type="text" />
+          <label for="nascimento">Data de Nascimento</label>
+          <input id="nascimento" type="date" />
+          <label for="mae">Nome da mãe</label>
+          <input id="mae" type="text" />
+          <label for="status">Status</label>
+          <input id="status" type="text" />
+          <label for="inclusao">Data de Inclusão</label>
+          <input id="inclusao" type="date" />
+          <label for="alteracao">Data de Alteração</label>
+          <input id="alteracao" type="date" />
+          <label for="idade">Idade</label>
+          <input id="idade" type="text" />
+          <button id="btn">Salvar</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="/consultaUsuario/consultaUsuario.js"></script>
+  </body>
+</html>

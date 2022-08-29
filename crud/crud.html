@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/crud/crudStyle.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>CRUD</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <span>Cadastro de usuários</span>
+        <a href="/consultaUsuario/consultaUsuario.html"
+          ><button id="consultar">Consultar Usuário</button></a
+        >
+        <button onclick="openModal()" id="inserir">Inserir</button>
+      </div>
+      <div class="divTable">
+        <table>
+          <thead>
+            <tr>
+              <th>Nome</th>
+              <th>Login</th>
+              <th>Senha</th>
+              <th>E-mail</th>
+              <th>Telefone</th>
+              <th>CPF</th>
+              <th>Nascimento</th>
+              <th>Nome da mãe</th>
+              <th>Status</th>
+              <th>Inclusão</th>
+              <th>Alteração</th>
+              <th class="acao">Editar</th>
+              <th class="acao">Excluir</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="modal-container">
+      <div class="modal">
+        <form action="">
+          <label for="nome">Nome</label>
+          <input id="nome" type="text" />
+          <label for="login">Login</label>
+          <input id="login" type="text" />
+          <label for="senha">Senha</label>
+          <input id="senha" type="text" />
+          <label for="email">E-mail</label>
+          <input id="email" type="email" />
+          <label for="telefone">Telefone</label>
+          <input id="telefone" type="tel" />
+          <label for="cpf">CPF</label>
+          <input id="cpf" type="text" />
+          <label for="nascimento">Data de Nascimento</label>
+          <input id="nascimento" type="date" />
+          <label for="mae">Nome da mãe</label>
+          <input id="mae" type="text" />
+          <label for="status">Status</label>
+          <input id="status" type="text" />
+          <label for="inclusao">Data de Inclusão</label>
+          <input id="inclusao" type="date" />
+          <label for="alteracao">Data de Alteração</label>
+          <input id="alteracao" type="date" />
+          <button id="btn">Salvar</button>
+        </form>
+      </div>
+    </div>
+    <script src="/crud/crudScript.js"></script>
+  </body>
+</html>

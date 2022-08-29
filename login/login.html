@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/login/login.css" />
+    <title>FCx Labs</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="forms-container">
+        <div class="signin">
+          <form action="" class="sign-in-form">
+            <h2 class="title">Acesso ao sistema</h2>
+            <div class="input">
+              <i class="fas fa-user"></i>
+              <input type="text" id="usuario" placeholder="Digite seu login" />
+            </div>
+            <div class="input">
+              <i class="fas fa-lock"></i>
+              <input
+                type="password"
+                id="senha"
+                placeholder="Digite sua senha"
+              />
+            </div>
+            <a href="/confirmarSenha/confirmarSenha.html" id="esqueceuSenha"
+              >Esqueceu a senha?</a
+            >
+            <a href="/crud/crud.html"
+              ><input
+                id="btnLogin"
+                type="submit"
+                value="Entrar"
+                class="btn solid"
+                onclick="entrar(); return false"
+              />
+            </a>
+          </form>
+        </div>
+      </div>
+      <img src="/login/img/join.svg" class="image" alt="ilustracao" />
+    </div>
+    <script href="/login/login.js"></script>
+  </body>
+</html>
